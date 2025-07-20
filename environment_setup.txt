@@ -1,0 +1,51 @@
+# Environment Setup for Survival Data Scraping
+
+## Required Environment Variables
+
+Create a .env file in the Survival_data directory with the following variables:
+
+```bash
+# Unsplash API Key (Get from: https://unsplash.com/developers)
+UNSPLASH_ACCESS_KEY=your_unsplash_access_key_here
+
+# Pexels API Key (Get from: https://www.pexels.com/api/)
+PEXELS_API_KEY=your_pexels_api_key_here
+
+# Optional: Delay between requests (seconds)
+SCRAPING_DELAY=2
+
+# Maximum images per query
+MAX_IMAGES_PER_QUERY=50
+
+# Maximum text articles per source
+MAX_ARTICLES_PER_SOURCE=30
+```
+
+## How to Get API Keys:
+
+1. **Unsplash API Key:**
+   - Go to https://unsplash.com/developers
+   - Create an account or sign in
+   - Create a new application
+   - Copy the "Access Key"
+
+2. **Pexels API Key:**
+   - Go to https://www.pexels.com/api/
+   - Create an account or sign in
+   - Generate an API key
+   - Copy the API key
+
+## Note:
+If you don't have API keys, the scraper will automatically use fallback methods that don't require keys.
+It will scrape from:
+- Wikimedia Commons (Creative Commons licensed images)
+- Government sources (Public domain images)
+- Other free sources
+
+## Load Environment Variables:
+Add this to your main script:
+
+```python
+from dotenv import load_dotenv
+load_dotenv()
+``` 
