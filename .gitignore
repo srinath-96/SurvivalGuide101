@@ -56,10 +56,7 @@ Thumbs.db
 *.temp
 temp/
 
-# Large data files (uncomment if you don't want to track images)
-data/images/*.jpg
-data/images/*.png
-data/images/*.jpeg 
 
-/Users/srinathmurali/Desktop/SurvivalGuide101/data/
+
+data/
 
