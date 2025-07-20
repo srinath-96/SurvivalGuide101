@@ -190,4 +190,8 @@ This scraper collects data from public sources:
 
 ---
 
-**Status**: ✅ Production Ready | 🧪 Tested | 📦 Self-Contained 
+
+
+## Model Weights:
+
+https://huggingface.co/srinath123/gemma-3/tree/main
